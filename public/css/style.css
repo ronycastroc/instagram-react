@@ -218,9 +218,7 @@ input#pesquisa::placeholder {
     margin-top: 5px;
 }
 
-.curtidas {
-    display: flex;
-}
+
 
 .imgcurtida {
     width: 20px;
@@ -233,6 +231,11 @@ input#pesquisa::placeholder {
     font-size: 14px;
     margin-left: 5px;
     margin-top: 8px;
+}
+
+.curtidas {
+    display: flex;
+    
 }
 
 .bold {
