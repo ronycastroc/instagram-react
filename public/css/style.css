@@ -1,0 +1,505 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+*{
+    box-sizing: content-box;
+}
+
+.topo {
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    display: flex;
+}
+
+
+.logoinsta {
+    font-size: 25px;
+    margin-left: 215px;
+    margin-top: 14px;
+}
+
+.linhavert {
+    width: 1px;
+    height: 22px;
+    background-color: #dbdbdb;
+    margin: 15px;
+}
+
+.topo img {
+    width: 90px;
+    height: 30px;
+    margin: 15px 0px auto 0px ;
+}
+
+input#pesquisa {
+    width: 215px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 200px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    
+}
+
+input#pesquisa::placeholder {
+    text-align: center;
+}
+
+.logoplane {
+    font-size: 25px;
+    margin-left: 190px;
+    margin-top: 14px;
+}
+
+.logopass {
+    font-size: 28px;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.logoheart {
+    font-size: 28px;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.logoperson {
+    font-size: 28px;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.bot {
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    display: none;
+}
+
+
+.home, .search,
+.circle, .heart,
+.person {
+    font-size: 28px;
+    margin-top: 12px;    
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    border: 1px solid #dbdbdb;
+    margin-left: 215px;
+    margin-top: 88px;
+    border-radius: 3px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.story {
+    position: relative;
+}
+
+.imgborder {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: 18px 7px 5px 10px;
+}
+
+.imgstory {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 18px 7px 5px 10px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.story p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -2px;
+}
+
+.seta {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    color: #FFFFFF;
+    z-index: 1;
+    top: 45px;
+    right: 3px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+}
+
+.post {
+    width: 614px;
+    height: 749px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-left: 215px;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.perfilpost {
+    display: flex;
+}
+
+.imgperfilpost {
+    width: 35px;
+    height: 35px;
+    margin: 15px 15px 13px 17px;
+}
+
+.perfilpost p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.ellipsis {
+    margin-top: 23px;
+    margin-left: 460px;
+}
+
+.imgpost {
+    width: 614px;
+    height: 614px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.iconspost {
+    display: flex;
+}
+
+.iconheart {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
+    
+}
+
+.iconchat {
+    font-size: 22px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.iconplane {
+    font-size: 22px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.iconmark {
+    font-size: 22px;
+    margin-left: 460px;
+    margin-top: 5px;
+}
+
+.curtidas {
+    display: flex;
+}
+
+.imgcurtida {
+    width: 20px;
+    height: 20px;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+
+.curtidas p {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.sidebar1 {
+    width: 200px;
+    height: 380px;
+    margin-top: 88px;
+    margin-left: 28px;
+}
+
+.perfilside {
+    display: flex;
+}
+
+.imguser {
+    width: 56px;
+    height: 56px;
+    margin-top: 25px;
+}
+
+.user {
+    margin-top: 35px;
+    margin-left: 13px;
+}
+
+.user1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+
+.sugestoes {
+    display: flex;
+}
+
+.spv {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8e8e8e;
+    margin-top: 24px;
+}
+
+.imgsugestoes {
+    display: flex;
+    
+}
+
+.imgusersuges {
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.usersugesflex {
+    display: flex;
+}
+
+.usersuges {
+    margin-top: 20px;
+    margin-left: 11px;
+}
+
+.usersugesp {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.seguevc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+    margin-top: 5px;
+}
+
+.seguirflex {
+    display: flex;
+}
+
+.sidebar2 {
+    margin-top: 88px;    
+}
+
+.vt {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 105px;
+    margin-left:55px;
+}
+
+.seguir {
+    font-size: 12px;
+    font-weight: 500;
+    color: #139EF2;
+    margin-left: 65px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sideinfo {
+    width: 300px;
+    height: 100px;
+
+}
+
+.infos p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #C7C7C7;
+    margin-top: 33px;
+    margin-bottom: -15px;
+}
+
+@media (max-width: 935px) {
+    
+    body {
+        width: 100%;
+    }
+
+    .sidebar1 {
+        display: none;
+    }
+
+    .sidebar2 {
+        display: none;
+    }
+
+    .conteudo {
+        margin: 0 auto;
+    }
+
+    .topo {
+        width: 100%;
+    }
+
+    .logoinsta {
+        font-size: 25px;
+        margin-left: 5px;
+        margin-top: 14px;
+    }
+    
+    .linhavert {
+        width: 1px;
+        height: 22px;
+        background-color: #dbdbdb;
+    }
+    
+    .topo img {
+        width: 90px;
+        height: 30px;
+    }
+    
+    input#pesquisa {
+        width: 215px;
+        height: 28px;
+        border-radius: 3px;
+        border: 1px solid #dbdbdb;
+     }
+    
+    .logoplane {
+        font-size: 25px;
+    }
+    
+    .logopass {
+        font-size: 28px;
+    }
+    
+    .logoheart {
+        font-size: 28px;
+    }
+    
+    .logoperson {
+        font-size: 28px;
+        margin-right: 10px;
+    }
+
+    .stories {
+        margin-left: 161.5px;
+    }
+
+    .post {
+        margin-left: 161.5px; 
+    }
+}
+
+@media (max-width: 614px) {
+    body {
+        width: 614px;
+    }
+    
+    .topo {
+        width: 100%;
+    }
+
+    .logoinsta {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 14px;
+    }
+    
+    .linhavert {
+        display: none;
+    }
+    
+    .topo img {
+        margin-left: 230px;
+    }
+    
+    input#pesquisa {
+        display: none;
+     }
+    
+    .logoplane {
+       font-size: 25px;
+       margin-left: 220px;
+    }
+    
+    .logopass {
+        display: none;
+    }
+    
+    .logoheart {
+        display: none;
+    }
+    
+    .logoperson {
+        display: none;
+    }
+
+    .seta {
+        display: none;
+    }
+
+    .stories {
+        margin-left: 0;
+        border: none;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .post {
+        margin-left: 0;
+        width: 100%; 
+        border: none;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .bot {
+        display: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+
+
