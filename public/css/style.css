@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
-    width: 1366px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -193,12 +193,20 @@ input#pesquisa::placeholder {
     display: flex;
 }
 
+.red {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
+    color:red;
+}
+
 .iconheart {
     font-size: 25px;
     margin-left: 15px;
     margin-top: 5px;
-    
 }
+
+
 
 .iconchat {
     font-size: 22px;
@@ -363,7 +371,7 @@ input#pesquisa::placeholder {
 @media (max-width: 935px) {
     
     body {
-        width: 100%;
+        width: 935px;
     }
 
     .sidebar1 {
@@ -430,6 +438,7 @@ input#pesquisa::placeholder {
     .post {
         margin-left: 161.5px; 
     }
+
 }
 
 @media (max-width: 614px) {

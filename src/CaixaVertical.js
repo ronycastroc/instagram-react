@@ -1,6 +1,24 @@
 import Stories from "./Stories"
+import React from "react"
 
 function Post(props) {
+    
+    const [cor, setCor] = React.useState('iconheart')
+    const [name, setName] = React.useState('heart-outline')
+
+    function like() {        
+        setCor('red md hydrated')
+        setName('heart')
+        
+        if(name === 'heart') {
+            setCor('iconheart md hydrated')
+            setName('heart-outline')
+        }
+    }
+
+
+
+
     return (
         <div class='post'>
             <div class="perfilpost">
@@ -9,11 +27,11 @@ function Post(props) {
                 <ion-icon class="ellipsis" name="ellipsis-horizontal"></ion-icon>
             </div>
             
-            <img class="imgpost" src={props.img} alt=""/>
+            <img class="imgpost" src={props.img} alt="" onClick={like}/>
 
             <div class="iconspost">
-                <ion-icon class="iconheart" name="heart-outline"></ion-icon>
-                <ion-icon class="iconchat" name="chatbubble-outline"></ion-icon>
+                <ion-icon class={cor} name={name} onClick={like}></ion-icon>
+                <ion-icon class="iconchat" name="chatbubble-outline" ></ion-icon>
                 <ion-icon class="iconplane" name="paper-plane-outline"></ion-icon>
                 <ion-icon class="iconmark" name="bookmark-outline"></ion-icon>
             </div>
@@ -73,3 +91,4 @@ export default function CaixaVertical() {
         </div>
     )
 }
+
